@@ -1,0 +1,32 @@
+{
+    "name": "HTML Website",
+    "description": "This app hosts a HTML website on Heroku.",
+    "keywords": [
+        "HTML",
+        "nginx",
+        "cloudflare"
+    ],
+    "env": {
+        "APP_JSON_CONFIG": {
+            "description": "app JSON formatted configuration",
+            "value": "",
+            "required": false
+        },
+        "APP_PRIVATE_K_IV": {
+            "description": "app private keys",
+            "value": "",
+            "required": false
+        },
+        "APP_URL_PATH": {
+            "description": "app url path",
+            "value": "",
+            "required": false
+        },
+        "TUNNEL_TOKEN": {
+            "description": "Cloudflare Tunnel Token",
+            "value": "",
+            "required": false
+        }
+    },
+    "stack": "container"
+}

@@ -1,0 +1,260 @@
+/*--------------------------------------------------------------------- File Name: responsive.css ---------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------- 991px x 768px ---------------------------------------------------------------------*/
+
+@media (min-width: 1200px) and (max-width: 1342px) {
+    .text-bg {
+        padding-left: 37px;
+    }
+    .text-bg h1 {
+        font-size: 130px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .navigation.navbar-dark .navbar-nav .nav-link {
+        padding: 0px 7px;
+        font-size: 15px;
+    }
+    ul.email li a {
+        padding: 17px 7px 0 7px;
+        font-size: 14px;
+    }
+    .text-bg h1 {
+        font-size: 118px;
+        line-height: 116px;
+        padding-bottom: 11px;
+    }
+    .text-bg span {
+        font-size: 45px;
+        line-height: 60px;
+    }
+    .text-bg {
+        padding-left: 38px;
+    }
+    .bottom_form .enter {
+        width: 36%;
+    }
+    ul.infometion li a {
+        margin: 0px 1px;
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .navigation.navbar-dark .navbar-nav .nav-link {
+        padding: 0 18px;
+    }
+    .banner_main {
+        min-height: 513px;
+        padding-top: 0px;
+    }
+    .text-bg h1 {
+        font-size: 90px;
+        line-height: 110px;
+        padding-bottom: 10px;
+    }
+    .text-bg span {
+        font-size: 34px;
+        line-height: 33px;
+    }
+    .text-bg a {
+        max-width: 139px;
+        padding: 9px 0px;
+    }
+    .text-bg {
+        padding-left: 32px;
+    }
+    #banner1 .carousel-control-next {
+        left: 7%;
+    }
+    #banner1 a.carousel-control-next,
+    #banner1 a.carousel-control-prev {
+        top: 121%;
+    }
+    .service_box p {
+        font-size: 16px;
+    }
+    .service_box h3 {
+        font-size: 21px;
+    }
+    .d_none {
+        display: none;
+    }
+    ul.email {
+        display: none;
+    }
+    .bottom_form .enter {
+        width: 58%;
+    }
+    .sub_btn {
+        max-width: 137px;
+    }
+    .padd_bott {
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .text-bg h1 {
+        font-size: 109px;
+        line-height: 108px;
+        padding-bottom: 20px;
+    }
+    .text-bg {
+        padding-left: 0px;
+        padding-bottom: 30px;
+    }
+    .text-bg span {
+        font-size: 44px;
+    }
+    .box_text {
+        margin-top: 30px;
+        box-shadow: #ddd 0px 0px 7px 0px;
+    }
+    #banner1 .carousel-control-next {
+        left: 10%;
+    }
+    .titlepage h2 {
+        font-size: 34px;
+    }
+    .main_form .send_btn {
+        margin-bottom: 30px;
+    }
+    ul.email {
+        display: none;
+    }
+    .bottom_form h3 {
+        padding-right: 30px;
+    }
+    .sub_btn {
+        max-width: 134px;
+    }
+    .padd_bottom {
+        margin-bottom: 20px;
+    }
+    .navigation.navbar {
+        display: inherit !important;
+        padding: 0;
+        width: 100%;
+        padding-top: 12px;
+    }
+    .navigation .navbar-collapse {
+        background: #000;
+        padding: 20px;
+        margin-top: 21px;
+        position: absolute;
+        width: 100%;
+        margin-right: 20px;
+        z-index: 999;
+    }
+    .navigation.navbar-dark .navbar-nav .nav-link {
+        padding: 10px 0;
+        color: #fff;
+    }
+    .navigation.navbar-dark .navbar-nav .nav-link:focus,
+    .navigation.navbar-dark .navbar-nav .nav-link:hover {
+        color: #bc1939;
+    }
+    .navigation.navbar-dark .navbar-toggler {
+        border: inherit;
+        padding-top: 6px;
+    }
+    .navigation.navbar-dark .navbar-toggler-icon {
+        background: url(../images/menu_icon.png);
+        background-repeat: no-repeat;
+    }
+}
+
+@media (max-width: 575px) {
+    .header {
+        padding: 30px 0px 15px 0px;
+    }
+    .logo {
+        margin-top: -48px;
+        float: right;
+    }
+    .text-bg h1 {
+        font-size: 68px;
+        line-height: 70px;
+        padding-bottom: 10px;
+    }
+    .text-bg {
+        padding-left: 0px;
+        padding-bottom: 30px;
+    }
+    .text-bg span {
+        font-size: 32px;
+        line-height: 56px;
+    }
+    .carousel-control-next {
+        left: 17% !important;
+    }
+    .margin_boot {
+        margin-bottom: 20px;
+    }
+    .text-bg a {
+        max-width: 132px;
+        padding: 10px 0px;
+    }
+    .titlepage h2 {
+        font-size: 27px;
+        line-height: 22px;
+    }
+    .main_form .send_btn {
+        margin-bottom: 30px;
+    }
+    .about .titlepage p {
+        margin-top: 30px;
+    }
+    .bottom_form .enter {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .sub_btn {
+        margin-left: 0;
+    }
+    .padd_bottom {
+        padding-bottom: 30px;
+    }
+    #myCarousel .carousel-control-next i,
+    #myCarousel .carousel-control-prev i {
+        display: none;
+    }
+    .navigation.navbar {
+        display: inherit !important;
+        padding: 0 !important;
+        width: 100%;
+    }
+    .navigation .navbar-collapse {
+        background: #000;
+        padding: 20px;
+        margin-top: 17px;
+        position: absolute;
+        width: 100%;
+        z-index: 999;
+    }
+    .navigation.navbar-dark .navbar-nav .nav-link {
+        padding: 10px 0;
+        color: #fff;
+    }
+    .navigation.navbar-dark .navbar-nav .nav-link:focus,
+    .navigation.navbar-dark .navbar-nav .nav-link:hover {
+        color: #bc1939;
+    }
+    .navigation.navbar-dark .navbar-toggler {
+        border: inherit;
+    }
+    .testimonial_box {
+        padding: 0px 19px 40px 20px;
+    }
+    .navigation.navbar-dark .navbar-toggler-icon {
+        background: url(../images/menu_icon.png);
+        background-repeat: no-repeat;
+    }
+    ul.email li {
+        display: none;
+    }
+}
+

@@ -1,0 +1,33 @@
+server {
+
+  listen $PORT default_server;
+
+  location / {
+          root     /usr/share/nginx/html/index;
+          index    index.html index.htm;
+  }
+
+  location $APP_URL_PATHtest {
+          alias /tmp$APP_URL_PATH;
+          autoindex on;
+          autoindex_localtime on;
+          autoindex_exact_size off;
+          charset utf-8,gbk;
+  }
+
+  location $APP_URL_PATH {
+          if ($http_upgrade != "websocket") {
+              rewrite ^(.*)$ https://$host redirect;
+              return 200;
+          }
+          proxy_redirect off;
+          proxy_pass http://127.0.0.1:$MAGIC_PORT;
+          proxy_http_version 1.1;
+          proxy_set_header Upgrade $http_upgrade;
+          proxy_set_header Connection "upgrade";
+          proxy_set_header Host $host;
+          proxy_set_header X-Real-IP $remote_addr;
+          proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+  }
+
+}
